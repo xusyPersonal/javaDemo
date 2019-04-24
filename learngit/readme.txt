@@ -45,7 +45,13 @@ git commit  -m  "提交信息"  （注：“提交信息”里面换成你需要
 
 git push -u origin master   （注：此操作目的是把本地仓库push到github上面，此步骤需要你输入帐号和密码）
 
-2、对github上的文件更改上传
+第一步：在提交项目之前必须先对项目进行更新，此项特别重要，如果不进行更新，别人有项目提交到服务器上，
+那么你的项目将会提交不上去，使用git解决冲突会比较麻烦，即使你解决了冲突，
+但是有时候不注意会冲掉别人写的代码，不像svn使用那么简单，所以提交自己项目前必须进行更新（特别重要）
+
+1：选择pull进行更新代码操作；
+
+对github上的文件更改上传
 git add readme.txt
 git commit -m "上传readme.txt"  //提交到本地库
 git push -u origin master // 本地库提交到github远程库
