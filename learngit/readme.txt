@@ -51,7 +51,7 @@ git push -u origin master   （注：此操作目的是把本地仓库push到git
 
 1：选择pull进行更新代码操作；
 
-对github上的文件更改上传
+2、对github上的文件更改上传
 git add readme.txt
 git commit -m "上传readme.txt"  //提交到本地库
 git push -u origin master // 本地库提交到github远程库
