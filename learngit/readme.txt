@@ -1,4 +1,4 @@
-git 创建本地项目并上传到github
+git 创建本地项目并上传到github （新项目上传到github）
 首先你需要一个github账号，所有还没有的话先去注册吧！
 
 https://github.com/
@@ -45,5 +45,7 @@ git commit  -m  "提交信息"  （注：“提交信息”里面换成你需要
 
 git push -u origin master   （注：此操作目的是把本地仓库push到github上面，此步骤需要你输入帐号和密码）
 
-
-
+对github上的文件更改上传
+git add readme.txt
+git commit -m "上传readme.txt"  //提交到本地库
+git push -u origin master // 本地库提交到github远程库
