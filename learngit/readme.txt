@@ -52,6 +52,32 @@ git push -u origin master   （注：此操作目的是把本地仓库push到git
 1：选择pull进行更新代码操作；
 
 2、对github上的文件更改上传 如下命令
-git add readme.txt
-git commit -m "上传readme.txt"  //提交到本地库
-git push -u origin master // 本地库提交到github远程库
+
+    git add readme.txt
+    git commit -m "上传readme.txt"  //提交到本地库
+    git push -u origin master // 本地库提交到github远程库
+
+    对应idea 就是
+    选中readme.txt 右击 Git -->commit File //添加到本地库
+    Git -->repository(最后一项) ---> push   //本地库上传到远程github库
+
+
+新增文件
+
+git add src/main/java/com/example/demo/entity/Man.java  // 提交到缓存中
+git commit -m "add Man class" //提交到本地库
+git push -u origin master  //提交到远程库
+
+idea 操作
+右键 Git ---> Add  // 提交到缓存中
+右键 Git ---> commit File  -->跳转到commit页面 点击commit （执行commit and push）  //提交到本地库
+右键Git ---> repository -->push  //提交到远程库
+
+
+
+
+
+
+
+
+
