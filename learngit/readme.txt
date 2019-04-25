@@ -70,7 +70,7 @@ Git -->compare with the same repository version 与自己本身这个版本比�
     Git -->repository(最后一项) ---> push   //本地库上传到远程github库
 
 
-新增文件
+3、github上传 新增文件
 
 git add src/main/java/com/example/demo/entity/Man.java  // 提交到缓存中
 git commit -m "add Man class" //提交到本地库
