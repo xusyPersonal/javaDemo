@@ -2,6 +2,9 @@ package com.example.demo.entity;
 
 import java.util.Date;
 
+/**
+ *
+ */
 public class Book {
 
     private String bookNanme ;
