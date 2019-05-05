@@ -100,8 +100,35 @@ https://www.cnblogs.com/zhangjianbin/p/7774073.html
         $ git branch
         * dev
           master
+        git branch命令会列出所有分支，当前分支前面会标一个*号。
 
+     4.2  然后在dev分支上修改learngit/readme.txt ,并提交
+           git add learngit/readme.txt
+           git commit -m "branch dev commit leanrngit/readme.txt"
+           git push -u origin dev   //提交到远程dev库  此时master分支还看不到
 
+      4.3 现在，dev分支的工作完成，我们就可以切换回master分支：
+
+          $ git checkout master
+          Switched to branch 'master'
+
+          切换回master分支后，再查看一个readme.txt文件，刚才添加的内容不见了！因为那个提交是在dev分支上，而master分支此刻的提交点并没有变：
+
+          现在，我们把dev分支的工作成果合并到master分支上：
+
+          $ git merge dev
+          Updating d17efd8..fec145a
+          Fast-forward
+           readme.txt |    1 +
+           1 file changed, 1 insertion(+)
+
+          git merge命令用于合并指定分支到当前分支。合并后，再查看readme.txt的内容，就可以看到，和dev分支的最新提交是完全一样的。
+
+          注意到上面的Fast-forward信息，Git告诉我们，这次合并是“快进模式”，也就是直接把master指向dev的当前提交，所以合并速度非常快。
+
+          当然，也不是每次合并都能Fast-forward，我们后面会讲其他方式的合并。
+
+          合并完成后，就可以放心地删除dev分支了：
 
 
 
